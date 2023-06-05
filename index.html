@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Google_Sans/ProductSans-Medium.ttf" />
+    <link rel="stylesheet" href="Google_Sans/ProductSans-Regular.ttf" />
+    <title>Fusion Cloud</title>
 </head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap");
+</style>
+
 <body>
-    
+    <section id="contact-us">
+        <div class="cursor"></div>
+        <div class="cu" id="cu-top">
+            <div class="cu-top-lft">
+                <h1>Let's Work <span>Together</span></h1>
+                <p>
+                    Unleash the power of the cloud. Elevate your business with our
+                    cutting-edge cloud solutions.
+                </p>
+                <div class="faq">
+                    <div class="faq-container">
+                        <div class="faq-ctn-top">
+                            <div class="xyz">
+                                <div class="ques-no">1</div>
+                                <div class="question">What's your name?</div>
+                            </div>
+                        </div>
+                        <div class="faq-ctn-btm">
+                            <input type="text" placeholder=" Type your name here" />
+                        </div>
+                    </div>
+                    <div class="faq-container">
+                        <div class="faq-ctn-top">
+                            <div class="xyz">
+                                <div class="ques-no">2</div>
+                                <div class="question">What's your email address?</div>
+                            </div>
+                        </div>
+                        <div class="faq-ctn-btm">
+                            <input type="text" placeholder=" Type your email address here" />
+                        </div>
+                    </div>
+                    <div class="faq-container">
+                        <div class="faq-ctn-top">
+                            <div class="xyz">
+                                <div class="ques-no">3</div>
+                                <div class="question">What's your Company/Organization name?</div>
+                            </div>
+                        </div>
+                        <div class="faq-ctn-btm">
+                            <input type="text" placeholder=" Type your company name here" />
+                        </div>
+                    </div>
+                    <div class="faq-container">
+                        <div class="faq-ctn-top">
+                            <div class="xyz">
+                                <div class="ques-no">4</div>
+                                <div class="question">What's your contact number?</div>
+                            </div>
+                        </div>
+                        <div class="faq-ctn-btm">
+                            <input type="text" placeholder=" Type your phone number here" />
+                        </div>
+                    </div>
+                    <button class="btn-primary" id = "submit">
+                        Send Message  <i class="fa-solid fa-arrow-up-right-from-square" style="color: #55b395;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cu-top-rgt">
+                <svg class="x" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path class = "y" fill="#918CF2" d="M55.2,-48.8C65.6,-31.1,63.9,-8.4,58.2,12.2C52.6,32.7,43.1,51.3,28,58.9C12.9,66.5,-8,63.1,-28.2,54.8C-48.4,46.5,-68.1,33.3,-73.9,14.9C-79.7,-3.5,-71.7,-27.1,-57,-45.8C-42.4,-64.5,-21.2,-78.2,0.6,-78.7C22.4,-79.2,44.9,-66.5,55.2,-48.8Z" transform="translate(100 100)" height = "30vw" />
+                </svg>
+            </div>
+        </div>
+        <div class="cu" id="cu-btm"></div>
+    </section>
+    <script>
+        const cursor = document.querySelector(".cursor");
+
+        document.addEventListener("mousemove", (e) => {
+            cursor.setAttribute(
+                "style",
+                "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+            );
+        });
+
+        document.addEventListener("click", () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500);
+        });
+    </script>
 </body>
+
 </html>

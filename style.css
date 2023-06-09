@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    cursor: none;
 }
 :root {
     --black: #0E1015;
@@ -16,20 +15,164 @@
   body {
     background-color: var(--black);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
   }
-
+  .section-head{
+    color: var(--purple);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.85vw;
+    margin: 1vw;
+    font-weight: 600;
+  }
+  #solutions{
+    margin-bottom: 0.5vw;
+  }
+  #contact{
+    margin-top: 2vw;
+    margin-bottom: -3.5vw;
+  }
+  #why-choose-us{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #wcu-top{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #wcu-head{
+    font-size: 2.5vw;
+    text-align: center;
+    color: var(--white);
+    font-weight: 500;
+  }
+  #wcu-head span{
+    color: var(--purple);
+  }
+  #wcu-sub-head{
+    color: #A1A4AA;
+    margin-top: 0.8vw;
+    font-size: 1vw;
+    font-weight: 500;
+    text-align: center;
+  }
+  #wcu-btm{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+  }
+  .wcu-ctn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .wcu-card{
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    height: 15vw;
+    width: 25vw;
+    margin: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    color:var(--white);
+  }
+  .wcu-icon{
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wcu-icon i{
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.5vw;
+    padding: 1vw;
+    border-radius: 50%;
+  }
+  #wcu-c-1 i{
+    color: var(--purple);
+    border: 1px solid var(--purple);
+  }
+  #wcu-c-2 i{
+    color: #EDF593;
+    border: 1px solid #EDF593;
+  }
+  #wcu-c-3 i{
+    color: #EB92D5;
+    border: 1px solid #EB92D5;
+  }
+  #wcu-c-4 i{
+    color: #FFA500;
+    border: 1px solid #FFA500;
+  }
+  #wcu-c-6 i{
+    color: #00CCFF;
+    border: 1px solid #00CCFF;
+  }
+  #wcu-c-5 i {
+    color: var(--green);
+    border: 1px solid var(--green);
+  }
+  .wcu-txt{
+    font-size: 1.2vw;
+    text-align: center;
+    font-weight: 500;
+  }
+  .wcu-sub-txt{
+    text-align: center;
+    font-size: 0.8vw;
+    margin: 0.5vw;
+    color: #A1A4AA;
+  }
+  #wcu-btm 
   #contact-us{
+    font-weight: 200;
     background-color: var(--black);
     color: var(--white);
     display: flex;
     flex-direction: column;
-   
   }
   #cu-top{
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    height: 92vh;
+  }
+  footer{
+    height: 10vh;
+    border-top: 0.001px solid rgba(178, 174, 174, 0.937);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .copyright{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: var(--white);
+    font-size: 0.9vw;
+    font-weight: 300;
+  }
+  .copyright span{
+    color: var(--purple);
+    font-weight: 500;
+  }
+  .social-icons{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+  }
+  footer i{
+    color: var(--white);
+    margin-left: 0.8vw;
+  }
+   i:hover{
+    color: var(--purple);
+    cursor: pointer;
   }
   .cu-top-lft{
     flex: 3;
@@ -48,9 +191,7 @@
   .y{
     height: 3vw !important;
   }
-  #cu-btm{
-    height: 20vh;
-  }
+ 
   .cu-top-lft h1{
     color: var(--white);
     font-size: 5.5vw;
@@ -92,6 +233,7 @@
   .question{
     font-size: 1.1vw;
     font-weight: 400;
+    color: var(--white);
   }
   .faq-ctn-top{
     display: flex;
